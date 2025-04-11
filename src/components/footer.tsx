@@ -17,11 +17,10 @@ export function Footer() {
               target="_blank"
               variant="h5"
               color="white"
-              className="mb-4"
-            >
+              className="mb-4"placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
               Material Tailwind
             </Typography>
-            <Typography color="white" className="mb-12 font-normal">
+            <Typography color="white" className="mb-12 font-normal"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               The reward for getting on the stage is fame.
             </Typography>
             <ul className="flex flex-wrap items-center justify-center md:justify-start">
@@ -31,10 +30,7 @@ export function Footer() {
                     as="a"
                     href="#"
                     color="white"
-                    className={`py-1 font-medium transition-colors ${
-                      idx === 0 ? "pr-3" : "px-3"
-                    }`}
-                  >
+                    className={`py-1 font-medium transition-colors ${idx === 0 ? "pr-3" : "px-3"}`}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}                  >
                     {link}
                   </Typography>
                 </li>
@@ -42,14 +38,13 @@ export function Footer() {
             </ul>
           </div>
           <div className="mt-8 w-full md:mt-0 md:w-auto">
-            <Typography variant="h6" color="white" className="mb-3">
+            <Typography variant="h6" color="white" className="mb-3"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               Get the app
             </Typography>
             <div className="flex flex-col gap-2">
               <Button
                 color="white"
-                className="flex items-center justify-center"
-              >
+                className="flex items-center justify-center"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}              >
                 <Image
                   width={256}
                   height={256}
@@ -61,8 +56,7 @@ export function Footer() {
               </Button>
               <Button
                 color="white"
-                className="flex items-center justify-center"
-              >
+                className="flex items-center justify-center"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}              >
                 <Image
                   width={256}
                   height={256}
@@ -78,8 +72,7 @@ export function Footer() {
         <div className="mt-16 flex flex-wrap items-center justify-center gap-y-4 gap-x-8 border-t border-gray-700 py-7 md:justify-between">
           <Typography
             color="white"
-            className="text-center font-normal opacity-75"
-          >
+            className="text-center font-normal opacity-75"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
             &copy; {CURRENT_YEAR} Made with{" "}
             <a href="https://www.material-tailwind.com" target="_blank">
               Material Tailwind
@@ -92,19 +85,19 @@ export function Footer() {
           </Typography>
 
           <div className="flex gap-2">
-            <IconButton variant="text" color="white">
+            <IconButton variant="text" color="white"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               <i className="fa-brands fa-twitter text-2xl not-italic opacity-75"></i>
             </IconButton>
-            <IconButton variant="text" color="white">
+            <IconButton variant="text" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               <i className="fa-brands fa-linkedin text-2xl not-italic opacity-75"></i>
             </IconButton>
-            <IconButton variant="text" color="white">
+            <IconButton variant="text" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               <i className="fa-brands fa-facebook text-2xl not-italic opacity-75"></i>
             </IconButton>
-            <IconButton variant="text" color="white">
+            <IconButton variant="text" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               <i className="fa-brands fa-github text-2xl not-italic opacity-75"></i>
             </IconButton>
-            <IconButton variant="text" color="white">
+            <IconButton variant="text" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               <i className="fa-brands fa-dribbble text-2xl not-italic opacity-75"></i>
             </IconButton>
           </div>
