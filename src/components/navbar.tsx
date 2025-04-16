@@ -64,13 +64,17 @@ export function Navbar() {
       color={isScrolling ? "white" : "transparent"}
       className="fixed top-0 z-50 border-0" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}    >
       <div className="container mx-auto flex items-center justify-between">
-        <Typography
+          <Typography
           as="a"
           href="https://www.material-tailwind.com"
           target="_blank"
           variant="h6"
           color={isScrolling ? "gray" : "white"} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}        >
-          Material Tailwind
+           <img
+    src={isScrolling ? "/image/IAGLOGO.png" : "/image/IAGLOGOW.png"}
+    alt="Impression Apparel Group"
+    className="h-12 w-auto transition-all duration-300"
+  />
         </Typography>
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
@@ -78,11 +82,12 @@ export function Navbar() {
           }`}
         >
           <NavItem>Home</NavItem>
-          <NavItem>About Us</NavItem>
-          <NavItem>Contact Us</NavItem>
+          <NavItem>Capacity</NavItem>
+          <NavItem>Products</NavItem>
           <NavItem href="https://www.material-tailwind.com/docs/react/installation">
-            Docs
+            Social Responsibility
           </NavItem>
+          <NavItem>Contact Us</NavItem>
         </ul>
         <div className="hidden gap-2 lg:flex lg:items-center">
           <IconButton
@@ -103,9 +108,15 @@ export function Navbar() {
             size="sm" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
             <i className="fa-brands fa-instagram text-base" />
           </IconButton>
+          <IconButton
+            variant="text"
+            color={isScrolling ? "gray" : "white"}
+            size="sm" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
+            <i className="fa-brands fa-linkedin text-base" />
+          </IconButton>
           <a href="https://www.material-tailwind.com/blocks" target="_blank">
             <Button color={isScrolling ? "gray" : "white"} size="sm" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-              Blocks
+              News!
             </Button>
           </a>
         </div>
@@ -132,7 +143,7 @@ export function Navbar() {
             </NavItem>
           </ul>
           <div className="mt-4 flex items-center gap-2">
-            <IconButton variant="text" color="gray" size="sm" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+          <IconButton variant="text" color="gray" size="sm" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               <i className="fa-brands fa-twitter text-base" />
             </IconButton>
             <IconButton variant="text" color="gray" size="sm"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
@@ -141,6 +152,10 @@ export function Navbar() {
             <IconButton variant="text" color="gray" size="sm"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               <i className="fa-brands fa-instagram text-base" />
             </IconButton>
+            <IconButton variant="text" color="gray" size="sm"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+              <i className="fa-brands fa-linkedin text-base" />
+            </IconButton>
+            
             <a href="https://www.material-tailwind.com/blocks" target="_blank">
               <Button color="gray" size="sm" className="ml-auto"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 Blocks

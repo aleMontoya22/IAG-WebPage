@@ -4,7 +4,7 @@ import { Button } from "@material-tailwind/react";
 
 export function FixedPlugin() {
   return (
-    <a href="https://www.material-tailwind.com" target="_blank">
+    <a href="https://wa.me/50378378847?text=Hola%2C%20quisiera%20una%20cotizaci%C3%B3n%20por%20favor" target="_blank">
       <Button
         color="white"
         size="sm"
@@ -13,10 +13,10 @@ export function FixedPlugin() {
           width={128}
           height={128}
           className="w-5 h-5"
-          alt="Material Tailwind"
-          src="https://www.material-tailwind.com/favicon.png"
+          alt="Impression Apparel Group"
+          src="/logos/whatsapp.png"
         />{" "}
-        Made With Material Tailwind
+        Click to Chat whit us.
       </Button>
     </a>
   );
